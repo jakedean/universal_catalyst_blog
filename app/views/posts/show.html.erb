@@ -1,0 +1,9 @@
+
+<% provide(:title, '@post.title') %>
+
+
+<div class="hero-unit">
+    <h2><%= @post.title %></h2></br>
+    <h3>Posted <%= time_ago_in_words(@post.created_at) %> ago</h3></br>
+    <p><%= @post.body %></p></br>
+ </div>

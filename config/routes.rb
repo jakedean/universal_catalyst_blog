@@ -1,4 +1,29 @@
 Blog::Application.routes.draw do
+
+  
+  get "sessions/new"
+
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :posts, only: [:new, :create, :destroy, :show]
+
+
+  root :to => 'static_pages#home'
+
+  match '/signin',           to: 'sessions#new'
+  
+  match '/signout',          to: 'sessions#destroy', via: :delete
+  
+  match '/about_me',         to: 'static_pages#about_me'
+
+  match '/projects',      to: 'static_pages#projects'
+
+  match '/thoughts',      to: 'static_pages#thoughts'
+
+  match '/about',   to: 'static_pages#about'
+
+  match '/signup',           to: 'users#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

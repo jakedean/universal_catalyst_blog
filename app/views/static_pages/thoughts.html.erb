@@ -1,0 +1,36 @@
+<% provide(:title, 'My Thoughts') %>
+
+ 
+   
+   
+<div class="non_h_title">My Thoughts</div>
+
+
+
+
+<% if current_user != nil %>
+  <%= form_for(@post) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+
+  <%= f.submit "Submit My Post!", class: "btn btn-large btn-primary" %>
+<% end %>
+<% end %>
+
+<% @posts.each do |post| %>
+  <div class="hero-unit">
+    <h2><%= link_to "#{post.title}", post_path(post) %></h2></br>
+    <h3>Posted <%= time_ago_in_words(post.created_at) %> ago</h3></br>
+    <p><%= post.body %></p></br>
+ </div>
+<% end %>
+
+
+
+
+

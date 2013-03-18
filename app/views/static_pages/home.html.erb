@@ -1,0 +1,66 @@
+<% provide(:title, 'Home') %>
+
+<div class="background_pic">
+    <%= image_tag("final_home_pic.png", :width => "100%", alt: "the_logo") %>
+   </div>
+  
+
+      <div class="featurette">
+        <div class ="img_l"><%= image_tag("jake_cir.png", :size => "500x500", alt: "Me") %></div>
+          
+            <h2 class="featurette-heading-1">About Me</h2>
+            <p class="lead">My name is Jacob Dean and I made the decsion to learn ruby on rails.  I have worked in the finance world for the past year and I am ready to make the swith into the web developmet world.  Click here to find out more...
+              <div class="hp_button_1"><%= link_to "About Me", about_me_path, class: "btn btn-large btn-primary" %></div> 
+             </p>
+          
+        </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <div class="img_r"><%= image_tag("web_circle.png", :size => "500x500", alt: "Rails") %></div>
+        
+        <h2 class="featurette-heading-2">About the Site</h2>
+        <p class="lead">The site will be my platform to give some of my thoguhts about everything I am doing and also to show some of the projects that I am working on.  I will have a section with screencasts as time goes on.  Click here to read more...
+        <div class="hp_button_2"><%= link_to "About the Site", about_path, class: "btn btn-large btn-primary" %></div>
+        </p>
+    
+      </div>
+
+      <hr class="featurette-divider">
+
+        <div class="featurette">
+        <div class="img_l"><%= image_tag("good_rails.png", :size => "300x300", alt: "Rails") %></div>
+       
+        <h2 class="featurette-heading-3">My Projects</h2>
+        <p class="lead">I am making an interesting Ruby on Rails app right now check it out.  At Cornell we had this list of things to do before you graduated and I always thought it was silly one person was able to make the list.  How about if we crowdsourced the list out to all the students?  Click here to take a look.  
+        <div class="hp_button_3"><%= link_to "My Projects", projects_path, class: "btn btn-large btn-primary" %></div> 
+        </p>
+    
+      </div>
+
+      <hr class="featurette-divider">
+
+        <div class="featurette">
+        <div class="img_r"><%= image_tag("thought-bubble.png", :size => "500x500", alt: "Rails") %></div>
+        
+        <h2 class="featurette-heading-4">My Thoughts</h2>
+        <p class="lead">This is the real blog section of my website, I share ideas about code I am learning or whatever else is on my mind.  I will post links to articles and videos, if you like this you should follow me on Twitter, the link is at the bottom of the page. 
+        <div class="hp_button_4"><%= link_to "My Thoughts", thoughts_path, class: "btn btn-large btn-primary" %></div>
+        </p>
+   
+      </div>
+
+      <hr class="featurette-divider">
+
+  
+ 
+
+
+
+
+
+
+
+
+
