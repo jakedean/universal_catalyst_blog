@@ -11,7 +11,7 @@
 <div class="hero-unit">
   <%= link_to "Connect Four", connect_four_path, id: "connectFour_link" %>
   <p>
-   This is a connect four AI I made with the minimax algorithm.  I used Javascript and the Canvas, take a look! 
+   This is a connect four AI I made with the minimax algorithm.  I used Javascript and the Canvas, take a look!  The computer is the green player you will be blue.
   </p>
 </div>
 
@@ -25,14 +25,21 @@
  <div class="hero-unit">
   <%= link_to "Logical Explorer", logical_explorer_path, id: "explorer" %>
   <p>
-   This is a program that solves the cave problem.  The explorer is the pink tile, the objective is to collect the gold (the gold tile) and make your way to the ladder (the brown tile) and get out of the cave. The program builds a map as it goes by collecting senses from the cells adjacent to the monsters (the green tiles) and the pits (the red tiles).  The player will only navigate the tiles it concludes are safe.  If the player runs out of known safe tiles to explore they have 3 arrows that they can shoot to try to kill monsters to clear more safe area to explore.  The game is over when the player makes it to the ladder with the gold or when they run out of safe tiles to explore and have no arrows to shoot.
+   This is a program that solves the cave problem.  The explorer is the pink tile, the objective is to collect the gold (the gold tile) and make your way to the ladder (the brown tile) and get out of the cave. The program builds a map as it goes by collecting senses(the smell of the monster and the breeze given off by the pits) from the cells adjacent to the monsters (the green tiles) and the pits (the red tiles).  The player does not have any information about the size of the map, the number/location of pits and monsters or the location of the gold/ladder.  The player will only navigate the tiles it concludes are safe.  If the player runs out of known safe tiles to explore, they have 3 arrows that they can shoot to try to kill monsters to clear more safe area to explore.  The game is over when the player makes it to the ladder with the gold or when they run out of safe tiles to explore and have no arrows to shoot.
   </p>
  </div>
 
  <div class="hero-unit">
-  <%= link_to "Recursive Backtracker", recursive_backtracker_path, id: "pong" %>
+  <%= link_to "Ruby Scripts", "https://github.com/jakedean/rubyScripts", id: "pong" %>
   <p>
-     This is a recursive backtracker I made, check it out.
+     Here are a bunch of ruby scripts that I wrote.  My favorite ones are the Markov Chain one, the minesweeper one and the spell checker.
+  </p>
+ </div>
+
+ <div class="hero-unit">
+  <%= link_to "Page Rank", '#', id: "page_rank" %>
+  <p>
+     This is an implementation of the page rank algorithm in Python.
   </p>
  </div>
 
@@ -51,10 +58,20 @@
  </div>
 
  <div class="hero-unit">
-  <%= link_to "Ruby Scripts", "https://github.com/jakedean/rubyScripts", id: "pong" %>
+  <%= link_to "Recursive Backtracker", recursive_backtracker_path, id: "pong" %>
   <p>
-     Here are a bunch of ruby scripts that I wrote.  My favorite ones are the Markov Chain one, the minesweeper one and the spell checker.
+     This is a recursive backtracker I made, check it out.
   </p>
  </div>
+
+
+ <div class="hero-unit">
+  <%= link_to "Everything", "https://github.com/jakedean?tab=repositories", id: "pong" %>
+  <p>
+     Here is my list of repos.  The Macruby script is interesting along with the Node.js file uploader.  
+  </p>
+ </div>
+
+ 
 
 

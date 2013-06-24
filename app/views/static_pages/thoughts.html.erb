@@ -1,12 +1,6 @@
 <% provide(:title, 'My Thoughts') %>
 
- 
-   
-   
 <div class="non_h_title">My Thoughts</div>
-
-
-
 
 <% if current_user != nil %>
   <%= form_for(@post) do |f| %>
@@ -19,13 +13,14 @@
     <%= f.text_area :body %>
 
   <%= f.submit "Submit My Post!", class: "btn btn-large btn-primary" %>
-<% end %>
+  <% end %>
 <% end %>
 
 <% @posts.each do |post| %>
   <div class="hero-unit">
     <h1><%= link_to "#{post.title}", post_path(post) %></h1>
-    <p><%= post.body %></p></br>
+    <p><%= truncate(post.body, :length => 250, :separator => ' ') %>
+      <%= link_to "Read More", post_path(post) %></p></br>
  </div>
 <% end %>
 
