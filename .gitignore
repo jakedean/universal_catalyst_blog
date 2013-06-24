@@ -16,5 +16,5 @@
 
 # Ignore the model files
 
-/app/models/post.rb
-/app/models/user.rb
+app/models/post.rb
+app/models/user.rb
