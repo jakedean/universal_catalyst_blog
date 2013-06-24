@@ -1,30 +1,60 @@
 <% provide(:title, 'My Projects') %>
 <div class="non_h_title">My Projects</div>
 
-<% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-       <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>  
-<% else %>
 <div class="hero-unit">
+  <%= link_to "161", 'http://one-sixty-one.herokuapp.com/', id: "161_link" %>
 <p>
-	The project I am working on right now is a web app that allows students at a college to crowd source a list of things to do before you graduate.  At Cornell we had a list that one person was able to decide on, but I am imagining an app that lets people "like" a certian task moving it higher in the rankings.  That way everyone gets a say.  Each student will be able to have a profile page that allows them to make a list of the tasks they have completed with a picture or video attached.  You will be able to search for friends and add them to you list of favorites.  To keep the app in check students can submit suggestions but their real email address will be attached to it.  I think it will be great, check back when I have a working model.  Thanks!
+  161 is a web app that allows students at a college to crowd source a list of things to do before you graduate from your respective school.  At Cornell we had a list that one person was able to have input on, but I am imagining an app that lets (potentially) everybody at the school work together to create one crowdsourced list.  That way everyone gets a say.  Each student has his or her own profile page along with their own list of items they would like to accomplish before they graduate.  You can follow friends and their activity will be at you fingertips through the recent activity feed.  To keep the app in check students can submit suggestions for items to be added to the list, but their real email address will be attached to it.  I am still owrking on it, but here is the prototype as it stands.  Check it out!
     </p>
-    <%= link_to "Sign up for 161", signup_path, id: "one_61_link" %>
  </div>
- <% end %>
+ 
+<div class="hero-unit">
+  <%= link_to "Connect Four", connect_four_path, id: "connectFour_link" %>
+  <p>
+   This is a connect four AI I made with the minimax algorithm.  I used Javascript and the Canvas, take a look! 
+  </p>
+</div>
+
+ <div class="hero-unit">
+  <%= link_to "A Star Pathfinder", a_star_path, id: "aStar" %>
+  <p>
+   This is a pathfinder that uses the aStar pathfinder algorithm to find the shortest path between the start and the finish.  I used JavaScript and the canvas again for this. 
+  </p>
+ </div>
+
+ <div class="hero-unit">
+  <%= link_to "Logical Explorer", logical_explorer_path, id: "explorer" %>
+  <p>
+   This is a program that solves the cave problem.  The explorer is the pink tile, the objective is to collect the gold (the gold tile) and make your way to the ladder (the brown tile) and get out of the cave. The program builds a map as it goes by collecting senses from the cells adjacent to the monsters (the green tiles) and the pits (the red tiles).  The player will only navigate the tiles it concludes are safe.  If the player runs out of known safe tiles to explore they have 3 arrows that they can shoot to try to kill monsters to clear more safe area to explore.  The game is over when the player makes it to the ladder with the gold or when they run out of safe tiles to explore and have no arrows to shoot.
+  </p>
+ </div>
+
+ <div class="hero-unit">
+  <%= link_to "Recursive Backtracker", recursive_backtracker_path, id: "pong" %>
+  <p>
+     This is a recursive backtracker I made, check it out.
+  </p>
+ </div>
+
+ <div class="hero-unit">
+  <%= link_to "Snake", snake_path, id: "snake" %>
+  <p>
+     This is the classic game that everybody loves.  Snake!
+  </p>
+ </div>
+
+ <div class="hero-unit">
+  <%= link_to "Pong", pong_path, id: "pong" %>
+  <p>
+     Here is a simple pong game.
+  </p>
+ </div>
+
+ <div class="hero-unit">
+  <%= link_to "Ruby Scripts", "https://github.com/jakedean/rubyScripts", id: "pong" %>
+  <p>
+     Here are a bunch of ruby scripts that I wrote.  My favorite ones are the Markov Chain one, the minesweeper one and the spell checker.
+  </p>
+ </div>
+
 

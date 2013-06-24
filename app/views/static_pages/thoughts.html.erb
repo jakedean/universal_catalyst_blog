@@ -25,7 +25,6 @@
 <% @posts.each do |post| %>
   <div class="hero-unit">
     <h1><%= link_to "#{post.title}", post_path(post) %></h1>
-    <h3>Posted <%= post.created_at %> ago</h3></br>
     <p><%= post.body %></p></br>
  </div>
 <% end %>

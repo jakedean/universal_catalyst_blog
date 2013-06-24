@@ -24,6 +24,20 @@ Blog::Application.routes.draw do
 
   match '/signup',           to: 'users#new'
 
+  match '/a_star', to: 'static_pages#a_star'
+
+  match '/connect_four', to: 'static_pages#connect_four'
+
+  match '/logical_explorer', to: 'static_pages#logical_explorer'
+
+  match '/pong', to: 'static_pages#pong'
+
+  match '/snake', to: 'static_pages#snake'
+
+  match '/recursive_backtracker', to: 'static_pages#recursive_backtracker'
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
