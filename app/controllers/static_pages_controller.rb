@@ -11,8 +11,6 @@ class StaticPagesController < ApplicationController
   end
 
   def thoughts
-  	@post = Post.new
-  	@posts = Post.all
 
   end
 
