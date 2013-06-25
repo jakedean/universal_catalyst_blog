@@ -34,6 +34,8 @@ Blog::Application.routes.draw do
 
   match '/snake', to: 'static_pages#snake'
 
+  match '/tron', to: 'static_pages#tron'
+
   match '/recursive_backtracker', to: 'static_pages#recursive_backtracker'
 
 
