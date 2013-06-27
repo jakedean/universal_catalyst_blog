@@ -4,42 +4,42 @@
 <div class="hero-unit">
   <%= link_to "161", 'http://one-sixty-one.herokuapp.com/', id: "161_link" %>
 <p>
-  161 is a web app that allows students at a college to crowd source a list of things to do before you graduate from your respective school.  At Cornell we had a list that one person was able to have input on, but I am imagining an app that lets (potentially) everybody at the school work together to create one crowdsourced list.  That way everyone gets a say.  Each student has his or her own profile page along with their own list of items they would like to accomplish before they graduate.  You can follow friends and their activity will be at you fingertips through the recent activity feed.  To keep the app in check students can submit suggestions for items to be added to the list, but their real email address will be attached to it.  I am still owrking on it, but here is the prototype as it stands.  Check it out!
+  161 is a web app that allows students at a college to crowdsource a list of things to do before they graduate from their respective school.  At Cornell we had a list that one person was able to have input on, but this is an app that lets (potentially) everybody at the school work together to create one crowdsourced list.  That way everyone gets a say.  Each student has his or her own profile page along with their own list of items they would like to accomplish before they graduate.  You can follow friends and their activity will be at you fingertips through the recent activity feed.  It is not polished yet, ut the framework is there.  Check it out!
     </p>
  </div>
  
 <div class="hero-unit">
   <%= link_to "Connect Four", connect_four_path, id: "connectFour_link" %>
   <p>
-   This is a connect four AI I made with the minimax algorithm.  I used Javascript and the Canvas, take a look!  The computer is the green player you will be blue.
+   This is a Connect Four AI I made with the minimax algorithm.  I used Javascript and the Canvas API, take a look!  The computer is the green player you will be blue.
   </p>
 </div>
 
  <div class="hero-unit">
   <%= link_to "A Star Pathfinder", a_star_path, id: "aStar" %>
   <p>
-   This is a pathfinder that uses the aStar pathfinder algorithm to find the shortest path between the start and the finish.  I used JavaScript and the canvas again for this. 
+   This is a pathfinder that uses the A* pathfinder algorithm to find the shortest path between the start and the finish.  I used JavaScript and the Canvas API again for this. 
   </p>
  </div>
 
  <div class="hero-unit">
   <%= link_to "Logical Explorer", logical_explorer_path, id: "explorer" %>
   <p>
-   This is a program that solves the cave problem.  The explorer is the pink tile, the objective is to collect the gold (the gold tile) and make your way to the ladder (the brown tile) and get out of the cave. The program builds a map as it goes by collecting senses(the smell of the monster and the breeze given off by the pits) from the cells adjacent to the monsters (the green tiles) and the pits (the red tiles).  The player does not have any information about the size of the map, the number/location of pits and monsters or the location of the gold/ladder.  The player will only navigate the tiles it concludes are safe.  If the player runs out of known safe tiles to explore, they have 3 arrows that they can shoot to try to kill monsters to clear more safe area to explore.  The game is over when the player makes it to the ladder with the gold or when they run out of safe tiles to explore and have no arrows to shoot.
+   This is a program that solves the cave problem.  The explorer is the pink tile, the objective is to collect the gold (the gold tile) and make your way to the ladder (the brown tile). The program builds a map as it goes by collecting senses(the monsters give off a smell for the player to sense and the pits give off a breeze for the player to sense). The player can sense the pits and monsters only from cells adjacent to the pit or monster.  The player does not have any information about the size of the map, the number/location of pits and monsters or the location of the gold/ladder.  The player will only navigate the tiles that it concludes are safe.  If the player runs out of known safe tiles to explore, they have 3 arrows that they can shoot to try to kill monsters to clear more safe area to explore.  The game is over when the player makes it to the ladder with the gold or when they run out of safe tiles to explore and have no arrows to shoot.  I made this with my friend Anthony Nardi and the source code lives on his <%= link_to "github", "https://github.com/anthony-nardi/LogicalExplorer", id: 'tony_github' %>.
   </p>
  </div>
 
  <div class="hero-unit">
   <%= link_to "Ruby Scripts", "https://github.com/jakedean/rubyScripts", id: "pong" %>
   <p>
-     Here are a bunch of ruby scripts that I wrote.  My favorite ones are the Markov Chain one, the minesweeper one and the spell checker.
+     Here are a bunch of ruby scripts that I wrote.  My favorite ones are the Markov Chain one, the minesweeper one, the spell checker and the elevator one.
   </p>
  </div>
 
  <div class="hero-unit">
-  <%= link_to "Page Rank", '#', id: "page_rank" %>
+  <%= link_to "Fuploader", 'https://github.com/jakedean/fileUploader', id: "page_rank" %>
   <p>
-     This is an implementation of the page rank algorithm in Python.
+     This is a picture uploader that I wrote in Node.js to integrate with Riak.  It is going to be part of a digital signage app my friends and I are in the process of making.
   </p>
  </div>
 
@@ -75,9 +75,9 @@
 
 
  <div class="hero-unit">
-  <%= link_to "Everything", "https://github.com/jakedean?tab=repositories", id: "pong" %>
+  <%= link_to "Everything", "https://github.com/jakedean?tab=repositories", id: "everything" %>
   <p>
-     Here is my list of repos.  The Macruby script is interesting along with the Node.js file uploader.  
+     Here is my list of repos.  The Macruby script is interesting along with the merge-sort algorithm I implemented in Python and the Euler problems.  
   </p>
  </div>
 
